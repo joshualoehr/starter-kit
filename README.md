@@ -18,7 +18,10 @@ Here's a list of this starter-kit's components, and some reasoning for including
 * `npm scripts` - Very simple task automation, baked right into the package.json. I use this to automatically run `npm audit` after `npm install`, among other things.
 * `babel` - Transpiles ES6+ into browser compatible JavaScript. Typically quick to adopt experimental features, which makes it a good choice for this starter-kit.
 * `webpack` - Maybe not the most lightweight option, but I picked this because of its wide adoption and its comprehensive bundling features for more than just JavaScript (HTML, CSS, images, fonts, etc).
-* `eslint`, `eslint-config-airbnb` - ESLint is the de facto standard for JavaScript linting these days, so this was another no-brainer. I also use AirBnB's coding standards because that's what I've been using for the last several years at work, and I'm not picky enough to switch it up right now.
+* `webpack-dev-server` - Another reason I picked webpack was for the built-in development server with live reloading.
+* `eslint` - ESLint is the de facto standard for JavaScript linting these days, so this was another no-brainer. Here I'm just using the recommended React configs.
+* `json-server`, `json-schema-faker` - A really cool and fast way to generate a mock API. When prototyping, I like to start with the UI as I formulate the shape of what I ultimately want my data to be returned as from the backend. With `json-schema-faker`, I can play with that data shape on the fly, AND easily get realistic-looking fake data on a whim. `json-server` makes it easy to serve that fake data to my prototype UI, AND allows me to interact with it like a REST API - with data persistence and all. Now that's pretty sweet.
+* `react` - My JavaScript framework of choice. Easily swapped out with anything else if I desire. 
 
 
 ## Future Considerations

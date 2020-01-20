@@ -1,9 +1,20 @@
 module.exports = {
-    "extends": "airbnb",
-    "plugins": [
-        "react"
+    "extends": [
+        "eslint:recommended",
+        "plugin:react/recommended"
     ],
-    "rules": {
-        "indent": ["warn", 4]
+    "plugins": [
+        "react",
+        "react-hooks"
+    ],
+    "parserOptions": {
+        "ecmaFeatures": {
+          "jsx": true,
+          "modules": true
+        }
+    },
+    "parser": "babel-eslint",
+    "globals": {
+        "fetch": false
     }
 };

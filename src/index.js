@@ -1,14 +1,11 @@
 /* global document */
+import React from 'react';
+import ReactDOM from 'react-dom';
 
-import './style.css';
+import App from './App';
 
-const component = () => {
-    const element = document.createElement('div');
+const root = document.createElement('div');
+root.id = 'root';
+document.body.appendChild(root);
 
-    element.innerHTML = 'Hello World!';
-    element.classList.add('hello');
-
-    return element;
-};
-
-document.body.appendChild(component());
+ReactDOM.render(<App />, root);

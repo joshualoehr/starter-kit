@@ -12,7 +12,7 @@ I'm tired of using `create-react-app` everytime I want to hack on a small projec
 
 Here's a list of this starter-kit's components, and some reasoning for including them:
 
--   `.editorconfig` - A no-brainer. This keeps my code looking my code, which I like.
+-   `.editorconfig` - A no-brainer. This keeps my code looking like my code, which I like.
 -   `npm` - I already know how to use it, it's ubiquitous, it gives me everything I need. Easy.
 -   `browser-sync` - Allows accessing localhost from other devices on the same network. Useful for testing development work on my phone.
 -   `npm scripts` - Very simple task automation, baked right into the package.json. I use this to automatically run `npm audit` after `npm install`, among other things.
